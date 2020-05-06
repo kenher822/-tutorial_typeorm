@@ -28,6 +28,4 @@ export class ClienteRepositorio{
     eliminarCliente(idCliente:string):Promise<DeleteResult>{
         return getManager().getRepository(Cliente).delete({id:idCliente});
     }
-
-
 }
