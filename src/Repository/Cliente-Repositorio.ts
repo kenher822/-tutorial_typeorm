@@ -13,7 +13,7 @@ export class ClienteRepositorio{
         .getMany(); // getOne
     }
 
-    obtenerCliente(idCliente: number):Promise<Cliente>{
+    obtenerCliente(idCliente: string):Promise<Cliente>{
         return getManager().getRepository(Cliente).findOne({
             where:{
                 id:idCliente
